@@ -17,13 +17,13 @@ app.get("/",(req,res)=>{
         res.send(`<h2>这是你的第一次访问</h2>`)
     }
 })
-app.use('/user',(req,res)=>{
-    if(req.cookies.isLogin){
-        res.send(`<h2>用户中心</h2>`)
-    }else{
-        res.redirect('/login')
-    }
-})
+// app.use('/user',(req,res)=>{
+//     if(req.cookies.isLogin){
+//         res.send(`<h2>用户中心</h2>`)
+//     }else{
+//         res.redirect('/login')
+//     }
+// })
 app.listen(3000,function(){
     console.log('listen on 3000');
     
